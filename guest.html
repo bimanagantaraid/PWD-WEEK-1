@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guest Book Simple</title>
+    <style>
+        .title{
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             font-size: 25px;
+             font-weight: 600;
+        }
+
+        .form-guest{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="title">
+        Buku Tamu
+    </div>
+    <div class="form-guest">
+
+        <form name="formguest" method="POST" action="guestprocess.php">
+            <table>
+                <tr>
+                    <td>Nama Lengkap</td>
+                    <td><input type="text" name="nama" id="nama"></td>
+                </tr>
+                <tr>
+                    <td>Alamat</td>
+                    <td><input type="text" name="alamat" id="alamat"></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input type="text" name="email" id="email"></td>
+                </tr>
+                <tr>
+                    <td>Status</td>
+                    <td>
+                        <select name="status" id="status">
+                            <option value="menikah">Menikah</option>
+                            <option value="single">Single</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Komentar</td>
+                    <td><textarea name="komentar" id="komentar" cols="30" rows="10"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="1">
+                        <button>Submit</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>
